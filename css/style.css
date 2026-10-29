@@ -160,7 +160,7 @@ body.dark-theme .burger span { background-color: #fff; }
     .gallery__grid { grid-template-columns: 1fr; }
     .gallery__grid img { height: 250px; }
     .form-card { padding: 25px; }
-  /* --- ТРЕНЕРЫ (АККОРДЕОН) --- */
+  /* --- ТРЕНЕРЫ (АККОРДЕОН) -- */
 .coaches { padding: 80px 0; background-color: var(--color-light); transition: background-color 0.3s; }
 .coaches__grid { 
     display: grid; 
