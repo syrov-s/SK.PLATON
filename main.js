@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- 1. ТЕМНАЯ ТЕМА ---
+    // Тема
     const themeToggle = document.getElementById('theme-toggle');
     const iconMoon = document.getElementById('icon-moon');
     const iconSun = document.getElementById('icon-sun');
@@ -26,10 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. МОБИЛЬНОЕ МЕНЮ ---
+    // Бургер
     const burger = document.getElementById('burger');
     const nav = document.getElementById('nav');
-
     if (burger && nav) {
         burger.addEventListener('click', () => {
             nav.classList.toggle('active');
@@ -42,19 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-
-
-            fetch(url)
-                .then(response => {
-                    if (response.ok) {
-                        status.textContent = '✅ Заявка отправлена! Мы свяжемся с вами.';
-                        status.style.color = 'green';
-                        form.reset();
-                    } else { throw new Error(); }
-                })
-                .catch(() => {
-                    status.textContent = '❌ Ошибка. Пожалуйста, позвоните нам.';
-                    status.style.color = 'red';
-                });
-        });
+});
